@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SortVis</title>
+        <link href="./Assets/style.css" rel="stylesheet">
+        <link rel="icon" href="./Assets/Logo.png ">
+    </head>
+    <body>
+        <section class="head center">SortVis</section>
+        <section class="data-container center"></section>
+
+        <div class="speedSelector center btn2" >
+            <input type="range" class="slider" min="100" max="600" value="300" id="myRange"></input><br>
+            <p style="font-size:20px;">Speed</p>
+        </div>
+        <div class="buttons center">
+        <button class="btn1" onclick="generate()" id="Button1">Generate New Array</button>
+        <button class="btn2" onclick="SelectionSort(), disable()" id="SS">Selection Sort</button>
+        <button class="btn2" onclick="BubbleSort(), disable()" id="BS">Bubble Sort</button>
+        <button class="btn2" onclick="InsertionSort(), disable()" id="IS">Insertion Sort</button><br>
+        <button class="btn2" onclick="RunQS(), disable()" id="QS">Quick Sort</button>
+        <button class="btn2" onclick="RunMS(), disable()" id="MS">Merge Sort</button>
+        <button class="btn2" onclick="HeapSort(), disable()" id="HS">Heap Sort</button>
+        <button class="btn2" onclick="CombSort(), disable()" id="HS">Comb Sort</button>
+        <button class="btn2" onclick="GnomeSort(), disable()" id="HS">Gnome Sort</button><br>
+        </div>
+        <div class="textarea"><input type="text" id="txt" class="customIN btn2"> <button class="submit btn2" onclick="generatebars()">SET</button></div>
+        <div class="redo center">
+            <button class="btn2" onclick="redo()">Redo</button>
+            <button class="btn3" onclick="generate()">Stop</button>
+        </div>
+    </body>
+    <script src="./main.js"></script>
+    <script src="Algorithms/bubbleSort.js"></script>
+    <script src="Algorithms/insertionSort.js"></script>
+    <script src="Algorithms/selectionSort.js"></script>
+    <script src="Algorithms/quickSort.js"></script>
+    <script src="Algorithms/mergeSort.js"></script>
+    <script src="Algorithms/heapSort.js"></script>
+    <script src="Algorithms/combSort.js"></script>
+    <script src="Algorithms/gnomeSort.js"></script>
+</html>
